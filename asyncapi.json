@@ -1,0 +1,23 @@
+{
+    "asyncapi": "2.3.0",
+    "defaultContentType": "application/json",
+    "info": {
+      "title": "ICC Service",
+      "version": "2.2.3",
+      "description": "Pub channel is client sending to server. Subscribe is server sending to client.\n"
+    },
+    "channels": {
+        "foobar": {
+          "publish": {
+            "description": "Messages sent to the API by the foobar.",
+            "message": {
+              "oneOf": [
+                {
+                  "$ref": "#/components/messages/foo"
+                }
+              ]
+            }
+          }
+      }
+    }
+}

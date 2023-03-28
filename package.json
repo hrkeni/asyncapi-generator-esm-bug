@@ -1,0 +1,20 @@
+{
+    "name": "test",
+    "version": "1.0.0",
+    "module": "commonjs",
+    "scripts": {
+      "gen-docs": "ag asyncapi.json @asyncapi/html-template --force-write -o ./public"
+    },
+    "mocha": {
+      "spec": [
+        "src/**/*.test.js"
+      ]
+    },
+    "license": "UNLICENSED",
+    "dependencies": {
+      "@asyncapi/generator": "^1.9.0"
+    },
+    "devDependencies": {
+    }
+  }
+  
